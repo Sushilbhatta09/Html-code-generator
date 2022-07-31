@@ -1,0 +1,38 @@
+{% extends 'headerPage.html' %}
+
+{% block content%}
+<div  style="padding-bottom: 150px;"  >
+  <span class="label label-default col-md-3 col-md-offset-1">1.UPLOAD DESIGN</span>
+<span class="label label-default col-md-3 col-md-offset-1">2.SUBMIT</span>
+<span class="label label-default col-md-3 col-md-offset-1">3.VIEWCODE</span>
+</div>
+
+
+  <div class="site-wrapper inner cover">
+
+<div class="inner cover">
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+
+<br> <br> <br>
+
+<h1 >Upload Wireframe For Code Generation </h1>
+
+    <br>
+
+    <form method="post" enctype="multipart/form-data" action="wireframe">
+
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label> </div> <input name="filePath" type="file"><br><br>
+ <br>
+
+ <input type="submit" value="Submit" class="btn btn-danger"></div>
+ </div>
+ </div>
+  </div>
+
+
+
+{% endblock %}

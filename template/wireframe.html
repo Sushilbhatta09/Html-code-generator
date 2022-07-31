@@ -1,0 +1,19 @@
+{% extends 'headerPage.html' %}
+{% block content%}
+<br> <br> <br>
+<h2> Wireframe Uploaded </h2>
+<img src="{{filepathname}}" alt="no image found" width="300" height="300">
+
+
+</form>
+<div>
+<form method="post" enctype="multipart/form-data" action="viewcode">
+
+{% csrf_token %}
+
+<br>
+
+<input type="Submit" value="View Code" class="btn btn-danger">
+</form></div>
+
+{% endblock %}

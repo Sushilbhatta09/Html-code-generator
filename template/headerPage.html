@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<title>{% block title %} HTML CODE GENERATOR{% endblock %}</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/animate.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+         <link rel="stylesheet" href="{% static 'css/workaround.css' %}" >
+     <!-- MAIN CSS -->
+
+ <link rel="stylesheet" href="{% static "css/cover.css" %}">
+
+</head>
+<body  >
+
+
+       <!-- MENU -->
+  <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+          <div class="cover-container">
+
+            <div class="masthead clearfix">
+              <div class="inner">
+                <a href="/" class="navbar-brand"><i class="fa fa-h-square"></i>TML Generator</a>
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="{% url 'about'%}">About</a></li>
+                  </ul>
+
+                </nav>
+
+                  </div>
+
+
+                </div>
+
+<div >
+     {% block content%}
+     {% endblock %}
+
+</div>
+
+     <!-- FOOTER -->
+     <div class="mastfoot">
+               <div class="inner">
+                 <p>© 2021 ACEM, edu.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+          </div>
+
+
+     <!-- SCRIPTS -->
+     <script  src="{% static 'js/jquery.js' %}"></script>
+     <script  src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script  src="{% static 'js/jquery.sticky.js' %}"></script>
+     <script  src="{% static 'js/jquery.stellar.min.js' %}"></script>
+     <script  src="{% static 'js/wow.min.js' %}"></script>
+     <script  src="{% static 'js/smoothscroll.js' %}"></script>
+     <script  src="{% static 'js/owl.carousel.min.js' %}"></script>
+     <script  src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
